@@ -1,0 +1,32 @@
+unit Aktw1_Nr1_Bl37_Carpet_Calculations_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCarpet = class(TForm)
+    lblRadius: TLabel;
+    lblCost: TLabel;
+    edtRadius: TEdit;
+    edtCost: TEdit;
+    btnBereken: TButton;
+    lblOmtrek: TLabel;
+    lblOppv: TLabel;
+    lblTrimCost: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCarpet: TfrmCarpet;
+
+implementation
+
+{$R *.dfm}
+
+end.

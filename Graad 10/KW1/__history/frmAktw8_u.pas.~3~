@@ -1,0 +1,45 @@
+unit frmAktw8_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmMethods = class(TForm)
+    lblName: TLabel;
+    lblSurname: TLabel;
+    lblAge: TLabel;
+    edtName: TEdit;
+    edtSurname: TEdit;
+    edtAge: TEdit;
+    bmbReset: TBitBtn;
+    btnEnglish: TButton;
+    btnAfrikaans: TButton;
+    btnSepedi: TButton;
+    procedure bmbResetClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMethods: TfrmMethods;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMethods.bmbResetClick(Sender: TObject);
+begin
+  edtName.Clear;
+  edtSurname.Clear;
+  edtAge.Clear;
+  lblName.Hide;
+  lblSurname.Hide;
+  lblAge.Hide;
+end;
+
+end.

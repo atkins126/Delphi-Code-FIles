@@ -3,9 +3,9 @@
 	<Transactions>
     <Transaction>2023/02/03 13:50:49.000.163,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2023/02/06 09:53:59.000.589,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/03/02 12:07:30.374,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/03/02 12:08:02.820,F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_u.dfm=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2023/03/02 12:08:02.820,F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_u.pas=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/03/02 12:08:15.629,F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_p.dproj=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/03/02 12:07:30.000.374,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/02 12:08:02.000.820,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas=F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_u.pas</Transaction>
+    <Transaction>2023/03/02 12:08:02.000.820,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.dfm=F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_u.dfm</Transaction>
+    <Transaction>2023/03/02 12:08:15.000.629,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\Delphi\KW1\Hoofstuk 2\Aktw 1 Bl 36 no.2\Pounds_to_Rands_p.dproj</Transaction>
   </Transactions>
 </BorlandProject>

@@ -1,0 +1,14 @@
+program Aktw1_Nr1_Bl37_Carpet_Calculations_p;
+
+uses
+  Vcl.Forms,
+  Aktw1_Nr1_Bl37_Carpet_Calculations_u in 'Aktw1_Nr1_Bl37_Carpet_Calculations_u.pas' {Form4};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm4, Form4);
+  Application.Run;
+end.

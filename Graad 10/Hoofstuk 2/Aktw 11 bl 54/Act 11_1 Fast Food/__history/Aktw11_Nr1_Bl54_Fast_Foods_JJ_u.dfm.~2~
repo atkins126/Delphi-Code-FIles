@@ -1,0 +1,56 @@
+object frmFastFood: TfrmFastFood
+  Left = 0
+  Top = 0
+  Caption = 'Fast Food'
+  ClientHeight = 347
+  ClientWidth = 468
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  TextHeight = 13
+  object imgCooldrink: TImage
+    Left = 64
+    Top = 24
+    Width = 105
+    Height = 105
+  end
+  object imgPizza: TImage
+    Left = 64
+    Top = 176
+    Width = 105
+    Height = 105
+  end
+  object bmbNextCustomer: TBitBtn
+    Left = 256
+    Top = 192
+    Width = 89
+    Height = 25
+    Caption = 'Next Customer'
+    TabOrder = 0
+  end
+  object bmbClose: TBitBtn
+    Left = 256
+    Top = 256
+    Width = 89
+    Height = 25
+    Kind = bkClose
+    NumGlyphs = 2
+    TabOrder = 1
+  end
+  object redAfvoer: TRichEdit
+    Left = 256
+    Top = 24
+    Width = 185
+    Height = 105
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+end

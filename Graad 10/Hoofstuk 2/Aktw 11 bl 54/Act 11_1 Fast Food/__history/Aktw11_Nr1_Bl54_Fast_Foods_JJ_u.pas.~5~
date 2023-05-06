@@ -1,0 +1,44 @@
+unit Aktw11_Nr1_Bl54_Fast_Foods_JJ_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ExtCtrls, Vcl.ComCtrls, Vcl.Imaging.jpeg;
+
+type
+  TfrmFastFood = class(TForm)
+    imgCooldrink: TImage;
+    imgPizza: TImage;
+    bmbNextCustomer: TBitBtn;
+    bmbClose: TBitBtn;
+    redAfvoer: TRichEdit;
+    imgHamburger: TImage;
+    procedure imgCooldrinkClick(Sender: TObject);
+  private
+    rCount, rTotDue, rTotB, rTotP, rTotC : Real;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFastFood: TfrmFastFood;
+
+implementation
+
+{$R *.dfm}
+
+const
+  Hamburger = 35.60;
+  Pizza = 22.40;
+  Drink = 12.30;
+
+procedure TfrmFastFood.imgCooldrinkClick(Sender: TObject);
+begin
+
+  rTotC := StrToFloat(InputBox('Hamburgers:','How many hamburgers do you want to buy?',''));
+
+end;
+
+end.

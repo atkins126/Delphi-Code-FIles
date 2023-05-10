@@ -79,6 +79,7 @@ begin
   rClassAvg := 0;
   rTotMarks := 0;
   rTotLearners := 0;
+  edtTestMark.SetFocus;
 end;
 
 end.

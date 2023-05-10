@@ -1,0 +1,319 @@
+object frmMultipleChoice: TfrmMultipleChoice
+  Left = 224
+  Top = 140
+  Caption = 'Test your knowledge'
+  ClientHeight = 429
+  ClientWidth = 506
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  TextHeight = 13
+  object lblTotal: TLabel
+    Left = 153
+    Top = 282
+    Width = 96
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Your score is:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQuest3: TLabel
+    Left = 41
+    Top = 190
+    Width = 236
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = '3. Which variable name is invalid?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQuest2: TLabel
+    Left = 41
+    Top = 111
+    Width = 429
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 
+      '2. Which variable is suitable to keep the price of a litre of fu' +
+      'el?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblQuest1: TLabel
+    Left = 41
+    Top = 33
+    Width = 451
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 
+      '1. Select the most suitable variable name to keep an IT test mar' +
+      'k '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblMessage: TLabel
+    Left = 158
+    Top = 7
+    Width = 337
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = 'Read the question and select the correct answer:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object bmbClose: TBitBtn
+    Left = 144
+    Top = 318
+    Width = 90
+    Height = 32
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Kind = bkClose
+    NumGlyphs = 2
+    TabOrder = 0
+  end
+  object pnlScore: TPanel
+    Left = 263
+    Top = 273
+    Width = 51
+    Height = 33
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object btnDone: TButton
+    Left = 38
+    Top = 275
+    Width = 88
+    Height = 33
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = '&Done'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnDoneClick
+  end
+  object bmbReset: TBitBtn
+    Left = 38
+    Top = 318
+    Width = 90
+    Height = 32
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Caption = '&Reset'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 3
+  end
+  object pnlQ1: TPanel
+    Left = 41
+    Top = 59
+    Width = 352
+    Height = 47
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Color = clInactiveCaption
+    TabOrder = 4
+    object pnlNo1Option1: TPanel
+      Left = 26
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iValue'
+      TabOrder = 0
+      OnClick = pnlNo1Option1Click
+    end
+    object pnlNo1Option2: TPanel
+      Left = 134
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iMark'
+      TabOrder = 1
+      OnClick = pnlNo1Option2Click
+    end
+    object pnlNo1Option3: TPanel
+      Left = 243
+      Top = 13
+      Width = 91
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iITMark'
+      TabOrder = 2
+      OnClick = pnlNo1Option3Click
+    end
+  end
+  object pnlQ2: TPanel
+    Left = 41
+    Top = 138
+    Width = 352
+    Height = 47
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Color = clInactiveCaption
+    TabOrder = 5
+    object pnlNo2Option2: TPanel
+      Left = 134
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iFuelPrice'
+      TabOrder = 0
+      OnClick = pnlNo2Option2Click
+    end
+    object pnlNo2Option1: TPanel
+      Left = 26
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'rFuelPrice'
+      TabOrder = 1
+      OnClick = pnlNo2Option1Click
+    end
+    object pnlNo2Option3: TPanel
+      Left = 243
+      Top = 13
+      Width = 91
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'sFuelPrice'
+      TabOrder = 2
+      OnClick = pnlNo2Option3Click
+    end
+  end
+  object pnlQ3: TPanel
+    Left = 41
+    Top = 218
+    Width = 352
+    Height = 46
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Color = clInactiveCaption
+    TabOrder = 6
+    object pnlNo3Option1: TPanel
+      Left = 26
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iTotal1'
+      TabOrder = 0
+      OnClick = pnlNo3Option1Click
+    end
+    object pnlNo3Option3: TPanel
+      Left = 243
+      Top = 13
+      Width = 91
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iTotalOne'
+      TabOrder = 1
+      OnClick = pnlNo3Option3Click
+    end
+    object pnlNo3Option2: TPanel
+      Left = 135
+      Top = 13
+      Width = 90
+      Height = 25
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
+      Caption = 'iTotal One'
+      TabOrder = 2
+      OnClick = pnlNo3Option2Click
+    end
+  end
+end

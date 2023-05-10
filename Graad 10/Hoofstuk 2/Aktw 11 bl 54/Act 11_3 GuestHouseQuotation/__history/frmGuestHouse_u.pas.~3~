@@ -1,0 +1,65 @@
+unit frmGuestHouse_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, Buttons;
+
+type
+  TfrmGuestHouse = class(TForm)
+    btnRooms: TButton;
+    btnBreakfasts: TButton;
+    btnDinners: TButton;
+    pnlRooms: TPanel;
+    pnlBreakfast: TPanel;
+    pnlDinner: TPanel;
+    pnlHeading: TPanel;
+    pnlTotal: TPanel;
+    pnlTotalMsg: TPanel;
+    btnNewGuest: TBitBtn;
+    bmbClose: TBitBtn;
+    lblMessage: TLabel;
+    procedure btnRoomsClick(Sender: TObject);
+    procedure btnBreakfastsClick(Sender: TObject);
+    procedure btnDinnersClick(Sender: TObject);
+  private
+
+    var rRooms, rBreakfasts, rDinners, rRoomsR, rBreakfastsR, rDinnersR, rTot : Real;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmGuestHouse: TfrmGuestHouse;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmGuestHouse.btnBreakfastsClick(Sender: TObject);
+begin
+
+  rBreakfasts := StrToFloat(InputBox('How many breakfasts would you like to book? ', ' ',' ' ));
+  rBreakfastsR := rBreakfasts * 60;
+  pnlBreakfast.Caption := 'The total breakfasts reserbed is: ' + FloatToStrf(rBreakfasts,ffFixed,10,0) + #9 + 'The total amount is: ' + FloatToStrF(rBreakfastsR,ffCurrency,10,2);
+end;
+
+procedure TfrmGuestHouse.btnDinnersClick(Sender: TObject);
+begin
+
+  rDinners := StrToFloat(InputBox('How many dinners would you like to book? ', ' ',' ' ));
+  rDinnersR := rDinners * 120;
+
+end;
+
+procedure TfrmGuestHouse.btnRoomsClick(Sender: TObject);
+begin
+
+  rRooms := StrToFloat(InputBox('How many rooms would you like to book? ', ' ',' ' ));
+  rRoomsR := rRooms * 450;
+
+end;
+
+end.

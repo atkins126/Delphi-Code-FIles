@@ -28,7 +28,7 @@ type
   private
 
   var
-    rFees, rAvg, rDDis, rDBus, rTot : Real;
+    rFees, rAvg, rDDis, rDBus, rTot, rTotD, rTotB, rTotR : Real;
     sName, sSurname : String;
     bDis, bRes, bBus : Boolean;
 
@@ -52,11 +52,14 @@ begin
   ledSurname.Clear;
   ledGr12Mark.Clear;
 
-  rFees :=0;
-  rAvg :=0;
-  rDDis :=0;
-  rDBus :=0;
-  rTot :=0;
+  rFees := 0;
+  rAvg := 0;
+  rDDis := 0;
+  rDBus := 0;
+  rTot := 0;
+  rTotD := 0;
+  rTotR := 0;
+  rTotB := 0;
 
   sName := ' ';
   sSurname := ' ';
@@ -89,8 +92,8 @@ begin
   rDDis := rFees * (10/100);
   bDis := True;
 
-  rTot := rFees - rDDis;
-  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
+  rTotD := rFees - rDDis;
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTotD,ffCurrency,10,2);
 
 end;
 
@@ -103,10 +106,14 @@ begin
 
   redAfvoer.Lines.Add('Name: ' + sName);
   redAfvoer.Lines.Add('Surname: ' + sSurname);
+  redAfvoer.Lines.Add('Grade 12 Mark: ' + FloatToStr(rAvg) + '%');
+  redAfvoer.Lines.Add('Initial Fees: R25000.00');
 
  if bDis = True then
 
   redAfvoer.Lines.Add('Distinction: Yes')
+
+  redAfvoer.Lines.Add('Distinction Fee:' + FloatToStrF(rTotD,ffCurrency,10,2))
 
  else
 
@@ -143,7 +150,7 @@ begin
 
   rTot := rTot + 50000;
 
-  pnlFees.Caption := 'total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
 
 end;
 
@@ -151,7 +158,7 @@ procedure TfrmCollegeStudents.FormActivate(Sender: TObject);
 begin
   rFees := 25000;
 
-  pnlFees.Caption := 'total fees: ' + FloatToStrF(rFees,ffCurrency,10,2);
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rFees,ffCurrency,10,2);
 
 end;
 

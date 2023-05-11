@@ -56,7 +56,7 @@ object frmCollegeStudents: TfrmCollegeStudents
   end
   object btnResidence: TButton
     Left = 32
-    Top = 120
+    Top = 96
     Width = 75
     Height = 25
     Caption = 'Residence'
@@ -65,7 +65,7 @@ object frmCollegeStudents: TfrmCollegeStudents
   end
   object btnBursary: TButton
     Left = 32
-    Top = 167
+    Top = 119
     Width = 75
     Height = 25
     Caption = 'Bursary'
@@ -74,7 +74,7 @@ object frmCollegeStudents: TfrmCollegeStudents
   end
   object btnRegister: TButton
     Left = 32
-    Top = 216
+    Top = 144
     Width = 75
     Height = 25
     Caption = 'Register'
@@ -83,7 +83,7 @@ object frmCollegeStudents: TfrmCollegeStudents
   end
   object bmbNext: TBitBtn
     Left = 32
-    Top = 264
+    Top = 168
     Width = 75
     Height = 25
     Caption = '&Next'
@@ -93,8 +93,8 @@ object frmCollegeStudents: TfrmCollegeStudents
     OnClick = bmbNextClick
   end
   object bmbClose: TBitBtn
-    Left = 144
-    Top = 264
+    Left = 32
+    Top = 192
     Width = 75
     Height = 25
     Kind = bkClose
@@ -112,7 +112,7 @@ object frmCollegeStudents: TfrmCollegeStudents
     Left = 152
     Top = 104
     Width = 313
-    Height = 137
+    Height = 184
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11

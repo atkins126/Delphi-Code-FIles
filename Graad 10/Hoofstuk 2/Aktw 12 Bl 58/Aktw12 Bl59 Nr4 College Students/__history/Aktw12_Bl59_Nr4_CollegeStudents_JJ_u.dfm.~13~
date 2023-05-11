@@ -21,7 +21,7 @@ object frmCollegeStudents: TfrmCollegeStudents
     EditLabel.Height = 13
     EditLabel.Caption = 'Name:'
     TabOrder = 0
-    Text = ''
+    Text = 'Marlu'
   end
   object ledSurname: TLabeledEdit
     Left = 184
@@ -32,7 +32,7 @@ object frmCollegeStudents: TfrmCollegeStudents
     EditLabel.Height = 13
     EditLabel.Caption = 'Surname:'
     TabOrder = 1
-    Text = ''
+    Text = 'Potgieter'
   end
   object ledGr12Mark: TLabeledEdit
     Left = 344
@@ -43,7 +43,7 @@ object frmCollegeStudents: TfrmCollegeStudents
     EditLabel.Height = 13
     EditLabel.Caption = 'Gr12 Mark:'
     TabOrder = 2
-    Text = ''
+    Text = '94'
   end
   object btnDistinction: TButton
     Left = 32
@@ -52,44 +52,49 @@ object frmCollegeStudents: TfrmCollegeStudents
     Height = 25
     Caption = 'Distinction'
     TabOrder = 3
+    OnClick = btnDistinctionClick
   end
   object btnResidence: TButton
     Left = 32
-    Top = 168
+    Top = 96
     Width = 75
     Height = 25
     Caption = 'Residence'
     TabOrder = 4
+    OnClick = btnResidenceClick
   end
   object btnBursary: TButton
     Left = 32
-    Top = 120
+    Top = 119
     Width = 75
     Height = 25
     Caption = 'Bursary'
     TabOrder = 5
+    OnClick = btnBursaryClick
   end
   object btnRegister: TButton
     Left = 32
-    Top = 216
+    Top = 144
     Width = 75
     Height = 25
     Caption = 'Register'
     TabOrder = 6
+    OnClick = btnRegisterClick
   end
   object bmbNext: TBitBtn
     Left = 32
-    Top = 264
+    Top = 168
     Width = 75
     Height = 25
     Caption = '&Next'
     Kind = bkRetry
     NumGlyphs = 2
     TabOrder = 7
+    OnClick = bmbNextClick
   end
   object bmbClose: TBitBtn
-    Left = 144
-    Top = 264
+    Left = 32
+    Top = 192
     Width = 75
     Height = 25
     Kind = bkClose
@@ -107,7 +112,7 @@ object frmCollegeStudents: TfrmCollegeStudents
     Left = 152
     Top = 104
     Width = 313
-    Height = 137
+    Height = 184
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11

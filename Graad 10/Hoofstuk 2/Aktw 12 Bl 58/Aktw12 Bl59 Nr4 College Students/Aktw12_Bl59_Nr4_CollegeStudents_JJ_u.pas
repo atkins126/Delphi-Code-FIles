@@ -70,7 +70,7 @@ begin
 
   ledName.SetFocus;
 
-
+  pnlFees.Caption := 'Total Fees: R50000.00';
 
 end;
 
@@ -111,29 +111,28 @@ begin
 
  if bDis = True then
 
-  redAfvoer.Lines.Add('Distinction: Yes')
+  redAfvoer.Lines.Add('Distinction: Yes' + #12 + 'Distinction discount: ' + FloatToStrF(rDDis,ffCurrency,10,2) )
 
-  redAfvoer.Lines.Add('Distinction Fee:' + FloatToStrF(rTotD,ffCurrency,10,2))
 
  else
 
-  redAfvoer.Lines.Add('Distinction: No');
+  redAfvoer.Lines.Add('Distinction: No' + #12 + 'Distinction discount: ' + FloatToStrF(rDDis,ffCurrency,10,2));
 
  if bRes = True then
 
-  redAfvoer.Lines.Add('Residence: Yes')
+  redAfvoer.Lines.Add('Residence: Yes' + #12 + 'Residence Fee: ' + FloatToStrF(rTotR,ffCurrency,10,2))
 
  else
 
-  redAfvoer.Lines.Add('Residence: No');
+  redAfvoer.Lines.Add('Residence: No' + #12 + 'Residence Fee: ' + FloatToStrF(rTotR,ffCurrency,10,2));
 
  if bBus = True then
 
-  redAfvoer.Lines.Add('Busary: Yes')
+  redAfvoer.Lines.Add('Busary: Yes' + #12 + 'Busuary discount: ' + FloatToStrF(rDBus,ffCurrency,10,2))
 
  else
 
-  redAfvoer.Lines.Add('Busary: No');
+  redAfvoer.Lines.Add('Busary: No' + #12 + 'Busuary discount: ' + FloatToStrF(rDBus,ffCurrency,10,2));
 
 
   redAfvoer.Lines.Add('Total Fees: ' + FloatToStrF(rTot,ffCurrency,10,2));
@@ -149,6 +148,7 @@ begin
   bRes := True;
 
   rTot := rTot + 50000;
+  rTotR := 50000;
 
   pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
 

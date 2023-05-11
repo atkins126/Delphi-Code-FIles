@@ -24,10 +24,11 @@ type
     procedure btnDistinctionClick(Sender: TObject);
     procedure btnResidenceClick(Sender: TObject);
     procedure btnBursaryClick(Sender: TObject);
+    procedure bmbNextClick(Sender: TObject);
   private
 
   var
-    rFees, rAvg, rDDis, rTot, rDBus, rTotB : Real;
+    rFees, rAvg, rDDis, rDBus, rTot, rTotD, rTotB, rTotR : Real;
     sName, sSurname : String;
     bDis, bRes, bBus : Boolean;
 
@@ -42,15 +43,46 @@ implementation
 
 {$R *.dfm}
 
+procedure TfrmCollegeStudents.bmbNextClick(Sender: TObject);
+begin
+
+  redAfvoer.Clear;
+
+  ledName.Clear;
+  ledSurname.Clear;
+  ledGr12Mark.Clear;
+
+  rFees := 0;
+  rAvg := 0;
+  rDDis := 0;
+  rDBus := 0;
+  rTot := 0;
+  rTotD := 0;
+  rTotR := 0;
+  rTotB := 0;
+
+  sName := ' ';
+  sSurname := ' ';
+
+  bDis := False;
+  bRes := False;
+  bBus := False;
+
+  ledName.SetFocus;
+
+
+
+end;
+
 procedure TfrmCollegeStudents.btnBursaryClick(Sender: TObject);
 begin
 
   rDBus := rTot * (80/100);
   bBus := True;
 
-  rTotB := rTot - rDBus;
+  rTot := rTot - rDBus;
 
-  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTotB,ffCurrency,10,2);
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
 
 end;
 
@@ -60,8 +92,8 @@ begin
   rDDis := rFees * (10/100);
   bDis := True;
 
-  rTot := rFees - rDDis;
-  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
+  rTotD := rFees - rDDis;
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTotD,ffCurrency,10,2);
 
 end;
 
@@ -74,14 +106,17 @@ begin
 
   redAfvoer.Lines.Add('Name: ' + sName);
   redAfvoer.Lines.Add('Surname: ' + sSurname);
+  redAfvoer.Lines.Add('Grade 12 Mark: ' + FloatToStr(rAvg) + '%');
+  redAfvoer.Lines.Add('Initial Fees: R25000.00');
 
  if bDis = True then
 
-  redAfvoer.Lines.Add('Distinction: Yes')
+  redAfvoer.Lines.Add('Distinction: Yes' + #12 + 'Distinction fee: ' + FloatToStrF(rDDis,ffCurrency,10,2) )
+
 
  else
 
-  redAfvoer.Lines.Add('Distinction: No');
+  redAfvoer.Lines.Add('Distinction: No' + #12 + 'Distinction fee: ' + FloatToStrF(rDDis,ffCurrency,10,2));
 
  if bRes = True then
 
@@ -90,6 +125,17 @@ begin
  else
 
   redAfvoer.Lines.Add('Residence: No');
+
+ if bBus = True then
+
+  redAfvoer.Lines.Add('Busary: Yes')
+
+ else
+
+  redAfvoer.Lines.Add('Busary: No');
+
+
+  redAfvoer.Lines.Add('Total Fees: ' + FloatToStrF(rTot,ffCurrency,10,2));
 
 
 
@@ -103,7 +149,7 @@ begin
 
   rTot := rTot + 50000;
 
-  pnlFees.Caption := 'total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rTot,ffCurrency,10,2);
 
 end;
 
@@ -111,7 +157,7 @@ procedure TfrmCollegeStudents.FormActivate(Sender: TObject);
 begin
   rFees := 25000;
 
-  pnlFees.Caption := 'total fees: ' + FloatToStrF(rFees,ffCurrency,10,2);
+  pnlFees.Caption := 'Total fees: ' + FloatToStrF(rFees,ffCurrency,10,2);
 
 end;
 

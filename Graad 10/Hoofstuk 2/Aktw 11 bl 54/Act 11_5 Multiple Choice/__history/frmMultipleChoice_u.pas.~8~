@@ -64,12 +64,6 @@ begin
   rCorrect := 0;
   rTot := 0;
 
-  pnlNo1Option1.Color := clMenu;
-  pnlNo1Option2.Color := clMenu;
-  pnlNo1Option3.Color := clMenu;
-
-  pnlQ1.Enabled := True;
-
 end;
 
 procedure TfrmMultipleChoice.btnDoneClick(Sender: TObject);
@@ -92,9 +86,7 @@ begin
 
   rCorrect := 0;
 
-
-
-  pnlNo1Option1.Color := clRed;
+  pnlNo2Option1.Color := clRed;
 
   pnlQ1.Enabled := False;
 

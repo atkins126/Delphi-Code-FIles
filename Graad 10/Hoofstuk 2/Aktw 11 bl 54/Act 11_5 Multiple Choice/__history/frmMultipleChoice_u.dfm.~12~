@@ -147,6 +147,7 @@ object frmMultipleChoice: TfrmMultipleChoice
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = btnDoneClick
   end
   object bmbReset: TBitBtn
     Left = 38
@@ -161,6 +162,7 @@ object frmMultipleChoice: TfrmMultipleChoice
     Kind = bkRetry
     NumGlyphs = 2
     TabOrder = 3
+    OnClick = bmbResetClick
   end
   object pnlQ1: TPanel
     Left = 41
@@ -183,6 +185,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Right = 2
       Margins.Bottom = 2
       Caption = 'iValue'
+      Color = clInactiveCaption
       TabOrder = 0
       OnClick = pnlNo1Option1Click
     end
@@ -235,6 +238,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'iFuelPrice'
       TabOrder = 0
+      OnClick = pnlNo2Option2Click
     end
     object pnlNo2Option1: TPanel
       Left = 26
@@ -247,6 +251,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'rFuelPrice'
       TabOrder = 1
+      OnClick = pnlNo2Option1Click
     end
     object pnlNo2Option3: TPanel
       Left = 243
@@ -259,6 +264,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'sFuelPrice'
       TabOrder = 2
+      OnClick = pnlNo2Option3Click
     end
   end
   object pnlQ3: TPanel
@@ -283,6 +289,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'iTotal1'
       TabOrder = 0
+      OnClick = pnlNo3Option1Click
     end
     object pnlNo3Option3: TPanel
       Left = 243
@@ -295,6 +302,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'iTotalOne'
       TabOrder = 1
+      OnClick = pnlNo3Option3Click
     end
     object pnlNo3Option2: TPanel
       Left = 135
@@ -307,6 +315,7 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Bottom = 2
       Caption = 'iTotal One'
       TabOrder = 2
+      OnClick = pnlNo3Option2Click
     end
   end
 end

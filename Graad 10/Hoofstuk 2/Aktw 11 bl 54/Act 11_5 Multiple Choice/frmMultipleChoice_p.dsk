@@ -59,9 +59,9 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=F:\Delphi Code Files\Delphi-Code-FIles\Graad 10\Hoofstuk 2\Aktw 11 bl 54\Act 11_5 Multiple Choice\frmMultipleChoice_u.pas
-CursorX=3
-CursorY=83
-TopLine=56
+CursorX=9
+CursorY=97
+TopLine=79
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -202,8 +202,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Enabled,
-ExpandedItems=Anchors=0,Constraints=0,BevelEdges=0,Font=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Padding=0,StyleElements=0,Touch=0
+SelectedItem=Color,
+ExpandedItems=Anchors=0,BevelEdges=0,Constraints=0,BorderIcons=0
 
 [frmDesignPreview]
 PercentageSizes=1

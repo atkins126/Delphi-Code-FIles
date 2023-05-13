@@ -255,8 +255,6 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Right = 2
       Margins.Bottom = 2
       Caption = 'rFuelPrice'
-      Color = clMenu
-      ParentBackground = False
       TabOrder = 1
       OnClick = pnlNo2Option1Click
     end

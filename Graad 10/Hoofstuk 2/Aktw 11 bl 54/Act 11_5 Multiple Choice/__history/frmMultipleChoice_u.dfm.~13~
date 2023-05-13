@@ -147,6 +147,7 @@ object frmMultipleChoice: TfrmMultipleChoice
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = btnDoneClick
   end
   object bmbReset: TBitBtn
     Left = 38
@@ -161,6 +162,7 @@ object frmMultipleChoice: TfrmMultipleChoice
     Kind = bkRetry
     NumGlyphs = 2
     TabOrder = 3
+    OnClick = bmbResetClick
   end
   object pnlQ1: TPanel
     Left = 41
@@ -183,6 +185,8 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Right = 2
       Margins.Bottom = 2
       Caption = 'iValue'
+      Color = clMenu
+      ParentBackground = False
       TabOrder = 0
       OnClick = pnlNo1Option1Click
     end
@@ -196,6 +200,8 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Right = 2
       Margins.Bottom = 2
       Caption = 'iMark'
+      Color = clMenu
+      ParentBackground = False
       TabOrder = 1
       OnClick = pnlNo1Option2Click
     end
@@ -209,6 +215,8 @@ object frmMultipleChoice: TfrmMultipleChoice
       Margins.Right = 2
       Margins.Bottom = 2
       Caption = 'iITMark'
+      Color = clMenu
+      ParentBackground = False
       TabOrder = 2
       OnClick = pnlNo1Option3Click
     end

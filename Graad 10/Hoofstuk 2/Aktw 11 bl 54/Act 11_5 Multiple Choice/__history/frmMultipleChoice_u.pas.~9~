@@ -68,7 +68,7 @@ begin
   pnlNo1Option2.Color := clMenu;
   pnlNo1Option3.Color := clMenu;
 
-  pnlQ1.Enabled := True;
+  pnlQ1.Enabled := False;
 
 end;
 
@@ -92,9 +92,7 @@ begin
 
   rCorrect := 0;
 
-
-
-  pnlNo1Option1.Color := clRed;
+  pnlNo2Option1.Color := clRed;
 
   pnlQ1.Enabled := False;
 

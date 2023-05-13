@@ -92,9 +92,7 @@ begin
 
   rCorrect := 0;
 
-
-
-  pnlNo1Option1.Color := clRed;
+  pnlNo2Option1.Color := clRed;
 
   pnlQ1.Enabled := False;
 

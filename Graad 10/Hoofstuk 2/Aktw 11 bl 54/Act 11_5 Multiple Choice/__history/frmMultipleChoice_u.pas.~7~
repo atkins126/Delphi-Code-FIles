@@ -64,12 +64,6 @@ begin
   rCorrect := 0;
   rTot := 0;
 
-  pnlNo1Option1.Color := clMenu;
-  pnlNo1Option2.Color := clMenu;
-  pnlNo1Option3.Color := clMenu;
-
-  pnlQ1.Enabled := True;
-
 end;
 
 procedure TfrmMultipleChoice.btnDoneClick(Sender: TObject);
@@ -93,22 +87,13 @@ begin
   rCorrect := 0;
 
 
-
-  pnlNo1Option1.Color := clRed;
-
-  pnlQ1.Enabled := False;
-
-
 end;
 
 procedure TfrmMultipleChoice.pnlNo1Option2Click(Sender: TObject);
 begin
 
   rCorrect := rCorrect + 1;
-
-  pnlNo1Option2.Color := clGreen;
-
-  pnlQ1.Enabled := False;
+  //
 
 end;
 
@@ -123,10 +108,6 @@ if rCorrect > 1 then
 
   rCorrect := 0;
 
-  pnlNo1Option3.Color := clRed;
-
-  pnlQ1.Enabled := False;
-
 
 end;
 
@@ -135,9 +116,6 @@ begin
 
   rCorrect := rCorrect + 1;
 
-  pnlNo2Option1.Color := clGreen;
-
-  pnlQ2.Enabled := False;
 end;
 
 procedure TfrmMultipleChoice.pnlNo2Option2Click(Sender: TObject);
@@ -150,10 +128,6 @@ begin
   else
 
   rCorrect := 0;
-
-  pnlNo2Option2.Color := clRed;
-
-  pnlQ2.Enabled := False;
 
 end;
 
@@ -168,10 +142,6 @@ begin
 
   rCorrect := 0;
 
-  pnlNo2Option3.Color := clRed;
-
-  pnlQ2.Enabled := False;
-
 end;
 
 procedure TfrmMultipleChoice.pnlNo3Option1Click(Sender: TObject);
@@ -185,20 +155,12 @@ begin
 
   rCorrect := 0;
 
-  pnlNo3Option1.Color := clRed;
-
-  pnlQ3.Enabled := False;
-
 end;
 
 procedure TfrmMultipleChoice.pnlNo3Option2Click(Sender: TObject);
 begin
 
   rCorrect := rCorrect + 1;
-
-  pnlNo3Option2.Color := clGreen;
-
-  pnlQ3.Enabled := False;
 
 end;
 
@@ -212,10 +174,6 @@ begin
   else
 
   rCorrect := 0;
-
-  pnlNo3Option3.Color := clRed;
-
-  pnlQ3.Enabled := False;
 
 end;
 

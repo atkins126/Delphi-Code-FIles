@@ -1,0 +1,14 @@
+program For_Lus_soos_normaal_p;
+
+uses
+  Vcl.Forms,
+  For_Lus_soos_normaal_u in 'For_Lus_soos_normaal_u.pas' {Form6};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm6, Form6);
+  Application.Run;
+end.

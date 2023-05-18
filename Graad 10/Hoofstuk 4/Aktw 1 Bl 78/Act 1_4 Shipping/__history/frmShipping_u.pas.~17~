@@ -71,7 +71,7 @@ end;
 
 procedure TfrmShipping.btnCalcClick(Sender: TObject);
 
-var rInsure, rPriority, rTotC, rVat, rTot : Real;
+var rInsure, rPriority, rTotC, rVat : Real;
 
 begin
 
@@ -102,23 +102,23 @@ begin
   rTransportCost := rDistance * (12/100);
 
 
-  
-   rTot := rWeightCost + rTransportCost;
+   rInsure := rTransportCost;
+   rPriority := rTransportCost;
 
   if chkInsure.Enabled = True then
 
-      rInsure := rTot * (11/100);
+      rInsure := rTransportCost * (11/100);
 
   if chkPriority.Checked = True then
 
-    rPriority := rTot * (15/100);
+    rPriority := rTransportCost * (15/100);
 
-  rTotC := rTot + rInsure + rPriority;
+  rTotC := rWeightCost + rTransportCost + rInsure + rPriority;
 
   rVat := rTotC * 15/100;
 
   redOutput.Lines.Add('Total cost: ' + FloatToStrF(rTotC,ffCurrency,10,2) );
-  redOutput.Lines.Add('Weight Cost: ' + FloatToStrF(rWeightCost,ffCurrency,10,2));
+  //redOutput.Lines.Add('Transport Cost: ' + FloatToStrF(rTransportCost,ffCurrency,10,2));
   redOutput.Lines.Add('Transport Cost: ' + FloatToStrF(rTransportCost,ffCurrency,10,2));
   redOutput.Lines.Add('Insurance Fee: ' + FloatToStrF(rInsure,ffCurrency,10,2));
   redOutput.Lines.Add('Priority Transport Fee: ' + FloatToStrF(rPriority,ffCurrency,10,2));

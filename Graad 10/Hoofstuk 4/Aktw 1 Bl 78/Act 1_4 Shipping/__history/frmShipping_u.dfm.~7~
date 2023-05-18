@@ -2,7 +2,7 @@ object frmShipping: TfrmShipping
   Left = 222
   Top = 230
   Caption = 'Shipping cost'
-  ClientHeight = 285
+  ClientHeight = 229
   ClientWidth = 622
   Color = clBtnFace
   Font.Charset = ANSI_CHARSET
@@ -25,7 +25,7 @@ object frmShipping: TfrmShipping
     EditLabel.Height = 17
     EditLabel.Caption = 'Weight'
     TabOrder = 0
-    Text = '10'
+    Text = ''
   end
   object lbledtDistance: TLabeledEdit
     Left = 162
@@ -40,7 +40,7 @@ object frmShipping: TfrmShipping
     EditLabel.Height = 17
     EditLabel.Caption = 'Distance'
     TabOrder = 1
-    Text = '100'
+    Text = ''
   end
   object btnCalc: TButton
     Left = 154
@@ -69,9 +69,7 @@ object frmShipping: TfrmShipping
     Width = 113
     Height = 17
     Caption = 'Road'
-    Checked = True
     TabOrder = 4
-    TabStop = True
     OnClick = rbRoadClick
   end
   object rbTrain: TRadioButton
@@ -107,8 +105,6 @@ object frmShipping: TfrmShipping
     Width = 97
     Height = 17
     Caption = 'Insureance'
-    Checked = True
-    State = cbChecked
     TabOrder = 8
   end
   object chkPriority: TCheckBox
@@ -123,7 +119,7 @@ object frmShipping: TfrmShipping
     Left = 42
     Top = 117
     Width = 351
-    Height = 160
+    Height = 89
     TabOrder = 10
   end
   object bmbClose: TBitBtn
@@ -144,6 +140,5 @@ object frmShipping: TfrmShipping
     Kind = bkRetry
     NumGlyphs = 2
     TabOrder = 12
-    OnClick = bmbResetClick
   end
 end

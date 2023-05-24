@@ -1,124 +1,158 @@
 object frmSCR: TfrmSCR
   Left = 263
   Top = 230
-  Width = 880
-  Height = 604
   Caption = 'Voting for Student leaders'
+  ClientHeight = 451
+  ClientWidth = 687
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -20
+  Font.Height = -16
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
-  PixelsPerInch = 120
-  TextHeight = 24
+  TextHeight = 20
   object gbxMain: TGroupBox
-    Left = 10
+    Left = 8
     Top = 0
-    Width = 816
-    Height = 520
+    Width = 653
+    Height = 416
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     TabOrder = 0
     object gbxInput: TGroupBox
-      Left = 144
-      Top = 29
-      Width = 510
-      Height = 299
+      Left = 115
+      Top = 23
+      Width = 408
+      Height = 239
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Caption = 'Type in the information'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'MS Sans Serif'
       Font.Style = []
       ParentFont = False
       TabOrder = 0
       object lblName: TLabel
-        Left = 10
-        Top = 38
-        Width = 135
-        Height = 24
+        Left = 8
+        Top = 30
+        Width = 113
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Name of learner'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblGrd12: TLabel
-        Left = 10
-        Top = 96
-        Width = 227
-        Height = 24
+        Left = 8
+        Top = 77
+        Width = 193
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Total number of  Grade12'#39's'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clPurple
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblGrd11: TLabel
-        Left = 10
-        Top = 144
-        Width = 222
-        Height = 24
+        Left = 8
+        Top = 115
+        Width = 189
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Total number of Grade11'#39's'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clTeal
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblGr11Votes: TLabel
-        Left = 10
-        Top = 192
-        Width = 220
-        Height = 24
+        Left = 8
+        Top = 154
+        Width = 187
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Number of Grade 11 votes'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGreen
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblGr12Votes: TLabel
-        Left = 10
-        Top = 240
-        Width = 215
-        Height = 24
+        Left = 8
+        Top = 192
+        Width = 183
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Number of Grade12 votes'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object edtName: TEdit
-        Left = 173
-        Top = 29
-        Width = 299
-        Height = 32
+        Left = 138
+        Top = 23
+        Width = 240
+        Height = 28
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Color = clScrollBar
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
         TabOrder = 0
       end
       object sedTotGr12: TSpinEdit
-        Left = 269
-        Top = 86
-        Width = 68
-        Height = 35
+        Left = 215
+        Top = 69
+        Width = 55
+        Height = 30
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clPurple
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         MaxValue = 0
@@ -128,13 +162,17 @@ object frmSCR: TfrmSCR
         Value = 0
       end
       object sedTotGr11: TSpinEdit
-        Left = 269
-        Top = 134
-        Width = 68
-        Height = 35
+        Left = 215
+        Top = 107
+        Width = 55
+        Height = 30
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clTeal
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         MaxValue = 0
@@ -144,13 +182,17 @@ object frmSCR: TfrmSCR
         Value = 0
       end
       object sedGr11: TSpinEdit
-        Left = 269
-        Top = 182
-        Width = 68
-        Height = 35
+        Left = 215
+        Top = 146
+        Width = 55
+        Height = 30
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGreen
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         MaxValue = 0
@@ -160,13 +202,17 @@ object frmSCR: TfrmSCR
         Value = 0
       end
       object sedGr12: TSpinEdit
-        Left = 269
-        Top = 230
-        Width = 68
-        Height = 35
+        Left = 215
+        Top = 184
+        Width = 55
+        Height = 30
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         MaxValue = 0
@@ -177,60 +223,91 @@ object frmSCR: TfrmSCR
       end
     end
     object gbxOutput: TGroupBox
-      Left = 10
-      Top = 394
-      Width = 792
-      Height = 78
+      Left = 8
+      Top = 315
+      Width = 634
+      Height = 63
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       TabOrder = 1
       object lblMessage: TLabel
-        Left = 20
-        Top = 29
-        Width = 5
-        Height = 24
+        Left = 16
+        Top = 23
+        Width = 4
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
       end
       object lblKinders: TLabel
-        Left = 19
-        Top = 77
-        Width = 5
-        Height = 24
+        Left = 15
+        Top = 62
+        Width = 4
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
       end
       object lblGroot: TLabel
-        Left = 29
-        Top = 125
-        Width = 5
-        Height = 24
+        Left = 23
+        Top = 100
+        Width = 4
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
       end
     end
     object btnDisplay: TButton
-      Left = 307
-      Top = 336
-      Width = 213
-      Height = 49
+      Left = 246
+      Top = 269
+      Width = 170
+      Height = 39
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Caption = 'Display &Result'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clNavy
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'MS Sans Serif'
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = btnDisplayClick
     end
     object bmbReset: TBitBtn
-      Left = 19
-      Top = 480
-      Width = 90
-      Height = 30
+      Left = 15
+      Top = 384
+      Width = 72
+      Height = 24
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Caption = '&Reset'
-      TabOrder = 3
       Kind = bkRetry
+      NumGlyphs = 2
+      TabOrder = 3
     end
     object bmbClose: TBitBtn
-      Left = 718
-      Top = 480
-      Width = 90
-      Height = 30
-      TabOrder = 4
+      Left = 574
+      Top = 384
+      Width = 72
+      Height = 24
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Kind = bkClose
+      NumGlyphs = 2
+      TabOrder = 4
     end
   end
 end

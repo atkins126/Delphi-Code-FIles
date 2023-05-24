@@ -1,15 +1,15 @@
 object frmQualifyingTimes: TfrmQualifyingTimes
   Left = 242
   Top = 174
-  Width = 708
-  Height = 440
   HorzScrollBar.Visible = False
   VertScrollBar.Visible = False
   Caption = 'Triathlon Trials'
+  ClientHeight = 320
+  ClientWidth = 550
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -14
+  Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   Icon.Data = {
@@ -330,24 +330,30 @@ object frmQualifyingTimes: TfrmQualifyingTimes
     00000001FFFFE00000000003FFFFF00000000007FFFFF8000000000FFFFFFC00
     0000001FFFFFFE000000003FFFFFFF80000000FFFFFFFFE0000003FFFFFFFFF8
     00000FFFFFFFFFFF8000FFFFFFFFFFFFFFFFFFFFFFFF}
-  OldCreateOrder = False
-  PixelsPerInch = 120
-  TextHeight = 16
+  TextHeight = 13
   object pnlMain: TPanel
     Left = 2
-    Top = 5
-    Width = 661
-    Height = 356
+    Top = 4
+    Width = 528
+    Height = 285
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     TabOrder = 0
     object lblOutput: TLabel
-      Left = 20
-      Top = 236
-      Width = 5
-      Height = 24
+      Left = 16
+      Top = 189
+      Width = 4
+      Height = 20
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Color = clBtnFace
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
-      Font.Height = -20
+      Font.Height = -16
       Font.Name = 'MS Sans Serif'
       Font.Style = []
       ParentColor = False
@@ -355,119 +361,155 @@ object frmQualifyingTimes: TfrmQualifyingTimes
       Visible = False
     end
     object gbxTimes: TGroupBox
-      Left = 36
-      Top = 20
-      Width = 395
-      Height = 198
+      Left = 29
+      Top = 16
+      Width = 316
+      Height = 158
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Caption = 'Enter Times in Minutes'
       Color = cl3DLight
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -14
       Font.Name = 'MS Sans Serif'
       Font.Style = [fsBold]
       ParentColor = False
       ParentFont = False
       TabOrder = 0
       object lblQT: TLabel
-        Left = 10
-        Top = 30
-        Width = 131
-        Height = 24
+        Left = 8
+        Top = 24
+        Width = 107
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Qualifying Time'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblSwimtime: TLabel
-        Left = 10
-        Top = 69
-        Width = 136
-        Height = 24
+        Left = 8
+        Top = 55
+        Width = 110
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Swimming Time'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblCycletime: TLabel
-        Left = 10
-        Top = 108
-        Width = 135
-        Height = 24
+        Left = 8
+        Top = 86
+        Width = 108
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Cycling Time     '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object lblRuntime: TLabel
-        Left = 10
-        Top = 148
-        Width = 135
-        Height = 24
+        Left = 8
+        Top = 118
+        Width = 110
+        Height = 20
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'Running Time   '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -20
+        Font.Height = -16
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
       end
       object edtRunTime: TEdit
-        Left = 148
-        Top = 148
-        Width = 50
-        Height = 32
+        Left = 118
+        Top = 118
+        Width = 40
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -18
+        Font.Height = -14
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
         TabOrder = 3
       end
       object edtCycleTime: TEdit
-        Left = 148
-        Top = 108
-        Width = 50
-        Height = 32
+        Left = 118
+        Top = 86
+        Width = 40
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -18
+        Font.Height = -14
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
         TabOrder = 2
       end
       object edtSwimTime: TEdit
-        Left = 148
-        Top = 69
-        Width = 50
-        Height = 32
+        Left = 118
+        Top = 55
+        Width = 40
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -18
+        Font.Height = -14
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
         TabOrder = 1
       end
       object edtQualifyTime: TEdit
-        Left = 148
-        Top = 31
-        Width = 50
-        Height = 32
+        Left = 118
+        Top = 25
+        Width = 40
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -18
+        Font.Height = -14
         Font.Name = 'MS Sans Serif'
         Font.Style = []
         ParentFont = False
@@ -475,36 +517,54 @@ object frmQualifyingTimes: TfrmQualifyingTimes
       end
     end
     object gbxOptions: TGroupBox
-      Left = 20
-      Top = 286
-      Width = 385
-      Height = 60
+      Left = 16
+      Top = 229
+      Width = 308
+      Height = 48
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Color = cl3DLight
       ParentColor = False
       TabOrder = 1
       object bmbRetry: TBitBtn
-        Left = 10
-        Top = 20
-        Width = 100
-        Height = 30
-        TabOrder = 0
+        Left = 8
+        Top = 16
+        Width = 80
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Kind = bkRetry
+        NumGlyphs = 2
+        TabOrder = 0
+        OnClick = bmbRetryClick
       end
       object bmbClose: TBitBtn
-        Left = 276
-        Top = 20
-        Width = 99
-        Height = 30
-        TabOrder = 2
+        Left = 213
+        Top = 16
+        Width = 79
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Kind = bkClose
+        NumGlyphs = 2
+        TabOrder = 2
       end
       object bmbCalculate: TBitBtn
-        Left = 143
-        Top = 20
-        Width = 99
-        Height = 30
+        Left = 114
+        Top = 14
+        Width = 80
+        Height = 24
+        Margins.Left = 2
+        Margins.Top = 2
+        Margins.Right = 2
+        Margins.Bottom = 2
         Caption = 'C&alculate'
-        TabOrder = 1
         Glyph.Data = {
           76010000424D7601000000000000760000002800000020000000100000000100
           04000000000000010000120B0000120B00001000000000000000000000000000
@@ -519,6 +579,8 @@ object frmQualifyingTimes: TfrmQualifyingTimes
           33333333777777733333333330BBB0333333333337FFF7F33333333330000033
           33333333377777F33333333330BBB03333333333373337333333}
         NumGlyphs = 2
+        TabOrder = 1
+        OnClick = bmbCalculateClick
       end
     end
   end

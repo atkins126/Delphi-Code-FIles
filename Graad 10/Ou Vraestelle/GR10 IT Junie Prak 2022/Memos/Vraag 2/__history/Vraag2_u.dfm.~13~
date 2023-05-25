@@ -1,0 +1,73 @@
+object frmVraag2: TfrmVraag2
+  Left = 0
+  Top = 0
+  Caption = 'GR10 IT - Vraag 2'
+  ClientHeight = 460
+  ClientWidth = 772
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnGetalle: TButton
+    Left = 33
+    Top = 24
+    Width = 185
+    Height = 25
+    Caption = 'Lees 5 getalle in met For-lus'
+    TabOrder = 0
+    OnClick = btnGetalleClick
+  end
+  object redAfvoer: TRichEdit
+    Left = 33
+    Top = 72
+    Width = 185
+    Height = 193
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'redAfvoer')
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object gbx1: TGroupBox
+    Left = 320
+    Top = 32
+    Width = 313
+    Height = 313
+    Caption = 'Genereer Kode:'
+    TabOrder = 2
+    object lblKode: TLabel
+      Left = 16
+      Top = 99
+      Width = 28
+      Height = 13
+      Caption = 'Kode:'
+    end
+    object edtKode: TEdit
+      Left = 72
+      Top = 96
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object btnKode: TButton
+      Left = 72
+      Top = 41
+      Width = 137
+      Height = 33
+      Caption = 'Bepaal Kode'
+      TabOrder = 1
+      OnClick = btnKodeClick
+    end
+  end
+end

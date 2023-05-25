@@ -1,0 +1,37 @@
+unit Vraag1_u;        //Mnr J S Joubert      IT11xx     2022-06-03       {1}
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ExtCtrls;
+
+type
+  TfrmVraag1 = class(TForm)
+    btnSportspan: TButton;
+    ledVan: TLabeledEdit;
+    pnlAfvoer: TPanel;
+    bmbReset: TBitBtn;
+    bmbClose: TBitBtn;
+    lblNaam: TLabel;
+    edtNaam: TEdit;
+    procedure btnSportspanClick(Sender: TObject);
+  private
+    sNaam, sVan, sSportSpan : string;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmVraag1: TfrmVraag1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmVraag1.btnSportspanClick(Sender: TObject);
+begin
+  pnlAfvoer.Caption := 'Mnr Johan Joubert';
+end;
+
+end.

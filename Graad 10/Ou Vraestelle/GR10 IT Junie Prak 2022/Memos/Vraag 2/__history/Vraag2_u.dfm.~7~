@@ -1,0 +1,89 @@
+object frmVraag2: TfrmVraag2
+  Left = 0
+  Top = 0
+  Caption = 'Atletiek - Borge'
+  ClientHeight = 460
+  ClientWidth = 772
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblGemiddeld: TLabel
+    Left = 312
+    Top = 340
+    Width = 194
+    Height = 13
+    Caption = 'Gemiddelde bedrag deur borge geskenk:'
+  end
+  object btnGetalle: TButton
+    Left = 89
+    Top = 24
+    Width = 185
+    Height = 25
+    Caption = 'Lees 5 getalle in met For-lus'
+    TabOrder = 0
+  end
+  object edtGemiddeld: TEdit
+    Left = 536
+    Top = 337
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object btnDankie: TButton
+    Left = 48
+    Top = 328
+    Width = 177
+    Height = 25
+    Caption = 'Dankie aan ons Borge'
+    TabOrder = 2
+  end
+  object btnLees: TButton
+    Left = 440
+    Top = 24
+    Width = 161
+    Height = 25
+    Caption = 'Lees en Vertoon'
+    TabOrder = 3
+    OnClick = btnLeesClick
+  end
+  object redAfvoer: TRichEdit
+    Left = 89
+    Top = 72
+    Width = 417
+    Height = 193
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'redAfvoer')
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+  object btnGemiddeld: TButton
+    Left = 440
+    Top = 284
+    Width = 160
+    Height = 40
+    Caption = 'Bereken die Gemiddeld Bedrag deur borge geskenk'
+    TabOrder = 5
+    WordWrap = True
+  end
+  object btnKompetisie: TButton
+    Left = 376
+    Top = 392
+    Width = 273
+    Height = 25
+    Caption = 'Bepaal Prys vir Wenner van Kompetisie'
+    TabOrder = 6
+  end
+end
